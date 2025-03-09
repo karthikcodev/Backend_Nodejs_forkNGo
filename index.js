@@ -9,7 +9,7 @@ const productRoutes=require('./routes/productRoutes')
 
 const path=require('path')
 
-const PORT=5500
+const PORT=process.env.PORT || 5500
 dotEnv.config()
 
 
@@ -32,4 +32,8 @@ app.use('/uploads',express.static('uploads'))
 app.listen(PORT,()=>{
     console.log(`Server started and running Successfully at ${PORT}`)
 
+})
+
+app.use('/',(req,res)=>{
+    res.send("<h1>Welcome to forkNGo");
 })
