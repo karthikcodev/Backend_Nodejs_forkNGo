@@ -1,0 +1,25 @@
+API creation
+
+MODELS
+
+Vendor:username, email, password
+
+Firm: firmName,area, category, regio, offer, image
+
+Product: productName, price, category, image, bestSeller,description
+
+
+
+CONTROLLERS
+vendorController
+firmController
+productController
+
+
+Routes
+
+vendorRoute
+firmRoute
+prodouctRoute
+imageRoute
+deleteRoute
